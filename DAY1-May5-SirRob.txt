@@ -185,7 +185,7 @@ CALLMANAGER EXPRESS CONFIGURATION FOR VOIP/TELEPHONY ENGINEERS
 !!cisco unified call manager Express command
 !@@@CUCM-M
 config t
-   hostname CUCM-_
+   hostname CUCM72
    enable secret pass
    service password-encryption
    no logging console
@@ -200,22 +200,22 @@ config t
       exec-timeout 0 0
    Int Fa 0/0
      no shutdown
-	 ip add 10._.100.8 255.255.255.0 
+	 ip add 10.72.100.8 255.255.255.0 
 	 end
    
 !!!CUCM ANALOG PHONES CONFIG
 configure terminal
 dial-peer voice 1 pots
-   destination-pattern _00
+   destination-pattern 7200
    port 0/0/0
 dial-peer voice 2 pots
-   destination-pattern _01
+   destination-pattern 7201
    port 0/0/1
 dial-peer voice 3 pots
-   destination-pattern _02
+   destination-pattern 7202
    port 0/0/2
 dial-peer voice 4 pots
-   destination-pattern _03
+   destination-pattern 7203
    port 0/0/3
 end
 
