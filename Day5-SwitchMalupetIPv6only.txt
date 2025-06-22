@@ -269,6 +269,9 @@ config t
 NO spanning-tree vlan 1-999
 end
 AYUSIN ULET IS @taas: AT @baba
+config t
+spanning-tree vlan 1-999
+end
 9
 
 TASK7: HOW TO BECOME A WORLD-CLASS NETWORK ENGINEER
